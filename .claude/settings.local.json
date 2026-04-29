@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python tools/manage_recipients.py --add tumbokon.aaronjulius@gmail.com)",
+      "Bash(python tools/manage_recipients.py --list)",
+      "Bash(python tools/manage_recipients.py --export)",
+      "Bash(mkdir -p .tmp)",
+      "Bash(cat)",
+      "Bash(python tools/render_newsletter.py --input .tmp/test_newsletter.html --output .tmp/test_newsletter_final.html)",
+      "Bash(python tools/svg_to_png.py --input .tmp/test.svg --output .tmp/test.png --width 560)",
+      "Bash(pip install *)",
+      "Bash(python -m playwright install chromium)"
+    ]
+  }
+}
